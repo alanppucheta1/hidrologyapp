@@ -1,7 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'esp32_page.dart'; 
+import 'ble_uart_page.dart'; 
 
 void main() {
   runApp(MyApp());
@@ -62,8 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
         page = FavoritesPage();
         break;
 case 2:
-        page = Esp32Page(); // Use the correct class name
-
+        page = BleUartPage();
         break;
       default:
         throw UnimplementedError('no widget for $selectedIndex');
